@@ -4,3 +4,5 @@
       @socket.close
     end    
   end
+
+  MySocket.new.originate_call(123, 'jan')
