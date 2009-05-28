@@ -1,0 +1,6 @@
+  class MySocket < FreeswitchSocket
+    def originate_call(number, user)
+      command("bgapi originate user/#{user}@#{FREESWITCH_HOST} #{number}")
+      @socket.close
+    end    
+  end
