@@ -1,3 +1,4 @@
+require 'socket'
 class FreeswitchSocket
   
   def initialize
